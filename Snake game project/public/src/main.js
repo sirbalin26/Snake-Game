@@ -294,7 +294,7 @@ function update() {
         let apple = apples[a];
 
         if(Math.min(distance(apple, {x:seg.endX(), y:seg.endY()}), distance(apple, {x:seg.x,y:seg.y})) < appleWidth*2) {
-          score += Math.round(apple.life/2); // half  score if absorbed by the tail
+          score += Math.round(apple.life/2); 
           apples.splice(a, 1);
           addScoreSegments();
         }
